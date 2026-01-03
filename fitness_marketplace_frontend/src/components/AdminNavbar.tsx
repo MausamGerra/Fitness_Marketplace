@@ -1,4 +1,4 @@
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 type User = {

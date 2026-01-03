@@ -1,6 +1,6 @@
 // ProfilePage.tsx
 
-import React from 'react';
+// import React from 'react';
 
 // Define the expected structure for the user prop
 interface User {

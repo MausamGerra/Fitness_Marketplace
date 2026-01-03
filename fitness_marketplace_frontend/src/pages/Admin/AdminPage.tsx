@@ -91,7 +91,7 @@ export default function AdminPage() {
   const [totalItems, setTotalItems] = useState(0);
   const [revenue, setRevenue] = useState(0);
   const [users, setUsers] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [_, setLoading] = useState(true);
   const [message, setMessage] = useState<{ type: string; text: string } | null>(null);
   const [processingUserId, setProcessingUserId] = useState<string | number | null>(null);
 
