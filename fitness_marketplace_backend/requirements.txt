@@ -11,3 +11,4 @@ python-dotenv
 python-multipart
 bcrypt
 pydantic-settings
+pydantic[email]
