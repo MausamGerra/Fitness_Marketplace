@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import image2 from '../../assets/images/image2.jpg';
 
 const API = (import.meta.env.VITE_API_URL as string) || 'http://localhost:8000';
@@ -316,7 +316,7 @@ export default function Register(): React.ReactElement {
             <div className="flex items-start">
               <input type="checkbox" required className="w-4 h-4 mt-1 text-teal-600 border-gray-300 rounded focus:ring-teal-500" />
               <label className="ml-2 text-sm text-gray-600">
-                I agree to the <a href="#" className="text-teal-600 hover:text-teal-700 font-semibold">Terms of Service</a> and <a href="#" className="text-teal-600 hover:text-teal-700 font-semibold">Privacy Policy</a>
+                I agree to the <Link to="#" className="text-teal-600 hover:text-teal-700 font-semibold">Terms of Service</Link> and <Link to="#" className="text-teal-600 hover:text-teal-700 font-semibold">Privacy Policy</Link>
               </label>
             </div>
 
@@ -340,9 +340,9 @@ export default function Register(): React.ReactElement {
 
           <p className="text-center text-gray-600 mt-6 text-sm">
             Already have an account?{" "}
-            <a href="/" className="font-semibold text-teal-600 hover:text-teal-700 transition">
+            <Link to="/" className="font-semibold text-teal-600 hover:text-teal-700 transition">
               Sign in
-            </a>
+            </Link>
           </p>
         </div>
       </div>

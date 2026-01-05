@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import image1 from '../../assets/images/image1.png';
 
 const API = (import.meta.env.VITE_API_URL as string) || 'http://localhost:8000';
@@ -159,9 +159,9 @@ export default function ForgotPassword(): React.ReactElement {
           </div>
           <p className="text-center text-gray-600 mt-6 text-sm">
             Remember your Password?{" "}
-            <a href="/" className="font-semibold text-teal-600 hover:text-teal-700 transition">
+            <Link to="/" className="font-semibold text-teal-600 hover:text-teal-700 transition">
               Back to Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import image1 from '../../assets/images/image1.png';
 
 const API = (import.meta.env.VITE_API_URL as string) || 'http://localhost:8000';
@@ -182,9 +182,9 @@ export default function Login(): React.ReactElement {
                 <input type="checkbox" className="w-4 h-4 text-teal-600 border-gray-300 rounded focus:ring-teal-500" />
                 <span className="ml-2 text-sm text-gray-600">Remember me</span>
               </label>
-              <a href="/forgot-password" className="text-sm font-semibold text-teal-600 hover:text-teal-700">
+              <Link to="/forgot-password" className="text-sm font-semibold text-teal-600 hover:text-teal-700">
                 Forgot password?
-              </a>
+              </Link>
             </div>
 
             <button 
@@ -205,9 +205,9 @@ export default function Login(): React.ReactElement {
           </div>
           <p className="text-center text-gray-600 mt-6 text-sm">
             Don't have an account?{" "}
-            <a href="/register" className="font-semibold text-teal-600 hover:text-teal-700 transition">
+            <Link to="/register" className="font-semibold text-teal-600 hover:text-teal-700 transition">
               Register here
-            </a>
+            </Link>
           </p>
         </div>
       </div>
