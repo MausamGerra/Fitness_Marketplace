@@ -68,12 +68,6 @@ function AppContent() {
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
 
-        <Route path="/landing-page" element={<AllItemsPage />} />
-        <Route path="/AllItemsPage" element={<SearchItems />} />
-        <Route path="/sell" element={<SellerItemsPage />} />
-        <Route path="/profile" element={<ProfilePage user={currentUser} />} />
-        <Route path="/adminprofile" element={<ProfilePage user={currentUser} />} />
-
         {/* Admin Route */}
         <Route
           path="/admin"
