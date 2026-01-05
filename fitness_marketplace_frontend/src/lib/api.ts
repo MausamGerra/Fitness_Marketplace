@@ -8,7 +8,7 @@
 // }
 
 // const API = import.meta.env.VITE_API_URL as string;
-const API = "http://127.0.0.1:8000";
+const API = (import.meta.env.VITE_API_URL as string) || 'http://localhost:8000';
 
 function ok(res: Response) {
   if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
